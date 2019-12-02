@@ -70,13 +70,19 @@
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
-        width: 150px;
+        width: 120px;
         font-size: 13px;
         text-overflow: clip;
         white-space: normal;
     }
-    .fl-table td.high, .fl-table th.high{
+    .fl-table .mo-high, {
         height: 300px;
+    }
+    .fl-table .mo-mid, {
+        height: 150px;
+    }
+    .fl-table .mo-short, {
+        height: 40px;
     }
     .fl-table thead th {
         text-align: left;
