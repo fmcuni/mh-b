@@ -63,24 +63,27 @@
     }
     .fl-table td, .fl-table th {
         padding: 10px .625em .625em .625em;
-        height: 80px;
+        height: 55px;
         vertical-align: middle;
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
-        width: 120px;
+        width: 150px;
         font-size: 13px;
         text-overflow: clip;
         white-space: normal;
+    }
+    .fl-table th {
+	width: 75px;
     }
     .fl-table .mo-high, {
         height: 300px;
     }
     .fl-table .mo-mid, {
-        height: 150px;
+        height: 180px;
     }
     .fl-table .mo-short, {
-        height: 40px;
+        height: 100px;
     }
     .fl-table thead th {
         text-align: left;
