@@ -32,12 +32,6 @@
     background: #076B9C;
 }
 
-
-.fl-table thead th:nth-child(odd) {
-    color: #ffffff;
-    background: #155072;
-}
-
 .fl-table tr:nth-child(even) {
     background: #F8F8F8;
 }
@@ -49,6 +43,10 @@
         display: block;
         width: 100%;
     }
+	.fl-table thead th:nth-child(odd) {
+	    color: #ffffff;
+	    background: #155072;
+	}
     .fl-table thead, .fl-table tbody, .fl-table thead th {
         display: block;
     }
