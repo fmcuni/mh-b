@@ -35,13 +35,13 @@
     background: #F8F8F8;
 }
 
-.fl-table tr {
-    transition: ease 0.8;
+.fl-table * {
+    transition: ease 0.8s;
 }
 
 .fl-table tr:hover {
     background: #77aa4330;
-    transition: ease 0.8;
+    transition: ease 0.8s;
 }
 
 
