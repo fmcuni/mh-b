@@ -35,18 +35,19 @@
     background: #F8F8F8;
 }
 
-.fl-table * {
+
+/* hover row*/
+
+.fl-table.mouse-hover * {
     transition: ease 0.2s;
 }
-
-.fl-table tr:hover {
+.fl-table.mouse-hover tr:hover td {
     background: #77aa4330;
-}
-
-
-.fl-table tr:hover td {
-    border-color: transparent;
     color: black;
+}
+@media (min-width: 768px) {
+.fl-table.mouse-hover tr:hover td {
+    border-color: transparent;
 }
 
 /* Responsive */
