@@ -62,7 +62,8 @@
     .mh-table {
         display: block;
         width: 100%;
-	overflow-x: hidden;
+	overflow-x: scroll;
+	margin-left: 8px;
     }
     .mh-table.transpose {
         display: block;
