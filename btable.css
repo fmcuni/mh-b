@@ -50,6 +50,11 @@
 	    border-color: transparent;
 	}
 }
+@media (max-width: 767px) {
+	.fl-table.mouse-hover tbody tr:nth-child(even) {
+        	background: white;
+	}
+}
 
 /* Responsive */
 
