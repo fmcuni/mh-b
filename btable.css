@@ -20,14 +20,6 @@
     padding: 8px;
 }
 
-.fl-table {
-    position: relative;
-}
-.fl-table th {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
 
 .fl-table td {
     border-right: 1px solid #f8f8f8;
@@ -41,6 +33,19 @@
 
 .fl-table tr:nth-child(even) {
     background: #F8F8F8;
+}
+
+.fl-table * {
+    transition: ease 0.8;
+}
+
+.fl-table tr:hover {
+    background: #77aa4330;
+}
+
+
+.fl-table tr:hover td {
+    border-color: transparent;
 }
 
 /* Responsive */
