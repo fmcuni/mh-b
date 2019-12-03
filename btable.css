@@ -80,7 +80,7 @@
 	    color: #ffffff;
 	    background: #155072;
 	}
-    .mh-table.transpose thead, .mh-table tbody, .mh-table thead th {
+    .mh-table.transpose thead, .mh-table.transpose tbody, .mh-table.transpose thead th {
         display: block;
     }
     .mh-table.transpose thead th:last-child{
@@ -94,7 +94,7 @@
         position: relative;
         overflow-x: auto;
     }
-    .mh-table.transpose td, .mh-table th {
+    .mh-table.transpose td, .mh-table.transpose th {
         padding: 10px .625em .625em .625em;
         height: 55px;
         vertical-align: middle;
@@ -109,13 +109,13 @@
     .mh-table.transpose th {
 	width: 75px;
     }
-    .mh-table.transpose .mo-high, {
+    .mh-table.transpose .mo-high {
         height: 300px;
     }
-    .mh-table.transpose .mo-mid, {
+    .mh-table.transpose .mo-mid {
         height: 180px;
     }
-    .mh-table.transpose .mo-short, {
+    .mh-table.transpose .mo-short {
         height: 100px;
     }
     .mh-table.transpose thead th {
