@@ -2,11 +2,14 @@
 /* CSS Document */
 /* Table Styles */
 .table-wrapper{
-	margin-left: 5px;
-	margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    position: relative;
 }
 .table-wrapper .mh-table{
     box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.1 );
+    border-bottom: 5px;
 }
 .mh-table {
     font-size: 12px;
@@ -37,6 +40,21 @@
 
 .mh-table tr:nth-child(even) {
     background: #F8F8F8;
+}
+
+.table-wrapper:after {
+    content: "製表：";
+    display: block;
+    font-size: 12px;
+    background: url(https://app.contentstack.com/v3/assets/bltdf909986be592dae/blt7a7a97c1ba38534a/5d637eb…/MoneyHero_Desktop_Logo_colour_zh.png);
+    height: 22px;
+    width: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    right: -8px;
+    position: absolute;
+    bottom: -35px;
 }
 
 
