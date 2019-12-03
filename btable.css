@@ -34,7 +34,7 @@
     font-size: 12px;
 }
 
-.fl-table thead th {
+.fl-table th {
     color: #ffffff;
     background: #076B9C;
 }
@@ -61,13 +61,13 @@
 	    color: #ffffff;
 	    background: #155072;
 	}
-    .fl-table thead, .fl-table tbody, .fl-table thead th {
+    .fl-table tr:first-child, .fl-table tbody, .fl-table th {
         display: block;
     }
     .fl-table thead th:last-child{
         border-bottom: none;
     }
-    .fl-table thead {
+    .fl-table tr:first-child {
         float: left;
     }
     .fl-table tbody {
@@ -99,7 +99,7 @@
     .fl-table .mo-short, {
         height: 100px;
     }
-    .fl-table thead th {
+    .fl-table th {
         text-align: left;
         border-bottom: 1px solid #f7f7f9;
     }
