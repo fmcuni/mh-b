@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 /* Table Styles */
-.table-wrapper .fl-table{
+.table-wrapper .mh-table{
     box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.1 );
 }
-.fl-table {
+.mh-table {
     font-size: 12px;
     font-weight: normal;
     border: none;
@@ -15,43 +15,43 @@
     background-color: white;
 }
 
-.fl-table td, .fl-table th {
+.mh-table td, .mh-table th {
     text-align: center;
     padding: 8px;
 }
 
 
-.fl-table td {
+.mh-table td {
     border-right: 1px solid #f8f8f8;
     font-size: 12px;
 }
 
-.fl-table thead th {
+.mh-table thead th {
     color: #ffffff;
     background: #076B9C;
 }
 
-.fl-table tr:nth-child(even) {
+.mh-table tr:nth-child(even) {
     background: #F8F8F8;
 }
 
 
 /* hover row*/
 
-.fl-table.mouse-hover * {
+.mh-table.mouse-hover * {
     transition: ease 0.2s;
 }
-.fl-table.mouse-hover tr:hover td {
+.mh-table.mouse-hover tr:hover td {
     background: #77aa4330;
     color: black;
 }
 @media (min-width: 768px) {
-	.fl-table.mouse-hover tr:hover td {
+	.mh-table.mouse-hover tr:hover td {
 	    border-color: transparent;
 	}
 }
 @media (max-width: 767px) {
-	.fl-table.mouse-hover tbody tr:nth-child(even) {
+	.mh-table.mouse-hover tbody tr:nth-child(even) {
         	background: #e5efdc40;
 	}
 }
@@ -59,9 +59,15 @@
 /* Responsive */
 
 @media (max-width: 767px) {
-    .fl-table {
+    .mh-table {
         display: block;
         width: 100%;
+	overflow-x: hidden;
+    }
+    .mh-table.transpose {
+        display: block;
+        width: 100%;
+	overflow-x: visible;
     }
     html:lang(zh-HK) .table-wrapper:before{
         content: "向右拖曳查看更多 >";
@@ -70,25 +76,25 @@
         font-size: 12px;
         padding: 0 0 10px;
     }
-	.fl-table thead th:nth-child(odd) {
+	.mh-table.transpose thead th:nth-child(odd) {
 	    color: #ffffff;
 	    background: #155072;
 	}
-    .fl-table thead, .fl-table tbody, .fl-table thead th {
+    .mh-table.transpose thead, .mh-table tbody, .mh-table thead th {
         display: block;
     }
-    .fl-table thead th:last-child{
+    .mh-table.transpose thead th:last-child{
         border-bottom: none;
     }
-    .fl-table thead {
+    .mh-table.transpose thead {
         float: left;
     }
-    .fl-table tbody {
+    .mh-table.transpose tbody {
         width: auto;
         position: relative;
         overflow-x: auto;
     }
-    .fl-table td, .fl-table th {
+    .mh-table.transpose td, .mh-table th {
         padding: 10px .625em .625em .625em;
         height: 55px;
         vertical-align: middle;
@@ -100,39 +106,39 @@
         text-overflow: clip;
         white-space: normal;
     }
-    .fl-table th {
+    .mh-table.transpose th {
 	width: 75px;
     }
-    .fl-table .mo-high, {
+    .mh-table.transpose .mo-high, {
         height: 300px;
     }
-    .fl-table .mo-mid, {
+    .mh-table.transpose .mo-mid, {
         height: 180px;
     }
-    .fl-table .mo-short, {
+    .mh-table.transpose .mo-short, {
         height: 100px;
     }
-    .fl-table thead th {
+    .mh-table.transpose thead th {
         text-align: left;
         border-bottom: 1px solid #f7f7f9;
     }
-    .fl-table tbody tr {
+    .mh-table.transpose tbody tr {
         display: table-cell;
     }
-    .fl-table tbody tr:nth-child(odd) {
+    .mh-table.transpose tbody tr:nth-child(odd) {
         background: none;
     }
-    .fl-table tr:nth-child(even) {
+    .mh-table.transpose tr:nth-child(even) {
         background: transparent;
     }
-    .fl-table tr td:nth-child(odd) {
+    .mh-table.transpose tr td:nth-child(odd) {
         background: #F8F8F8;
         border-right: 1px solid #E6E4E4;
     }
-    .fl-table tr td:nth-child(even) {
+    .mh-table.transpose tr td:nth-child(even) {
         border-right: 1px solid #E6E4E4;
     }
-    .fl-table tbody td {
+    .mh-table.transpose tbody td {
         display: block;
         text-align: center;
     }
