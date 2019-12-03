@@ -1,8 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 /* Table Styles */
-.table-wrapper .mh-table{
+.table-wrapper{
     box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.1 );
+	margin-left: 5px;
+	margin-right: 5px;
 }
 .mh-table {
     font-size: 12px;
@@ -62,11 +64,13 @@
 /* Responsive */
 
 @media (max-width: 767px) {
+	.table-wrapper{
+		margin-left: 8px;
+	}
     .mh-table {
         display: block;
         width: 100%;
 	overflow-x: scroll;
-	margin-left: 8px;
     }
     .mh-table.transpose {
         display: block;
