@@ -46,8 +46,9 @@
     color: black;
 }
 @media (min-width: 768px) {
-.fl-table.mouse-hover tr:hover td {
-    border-color: transparent;
+	.fl-table.mouse-hover tr:hover td {
+	    border-color: transparent;
+	}
 }
 
 /* Responsive */
