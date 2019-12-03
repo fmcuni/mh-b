@@ -23,11 +23,11 @@
 .fl-table {
     position: relative;
 }
-.fl-table th｛
+.fl-table th {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-｝
+}
 
 .fl-table td {
     border-right: 1px solid #f8f8f8;
