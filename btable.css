@@ -2,9 +2,11 @@
 /* CSS Document */
 /* Table Styles */
 .table-wrapper{
-    box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.1 );
 	margin-left: 5px;
 	margin-right: 5px;
+}
+.table-wrapper .mh-table{
+    box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.1 );
 }
 .mh-table {
     font-size: 12px;
