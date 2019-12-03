@@ -52,7 +52,10 @@
 }
 @media (max-width: 767px) {
 	.mh-table.mouse-hover tbody tr:hover :nth-child(even) {
-        	background: #e5efdc40;
+        background: #e5efdc40;
+	}
+	.mh-table.mouse-hover tbody tr:hover :nth-child(odd) {
+        background: #77aa4330;
 	}
 }
 
