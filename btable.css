@@ -51,7 +51,7 @@
 	}
 }
 @media (max-width: 767px) {
-	.mh-table.mouse-hover tbody tr:nth-child(even) {
+	.mh-table.mouse-hover tbody tr:hover :nth-child(even) {
         	background: #e5efdc40;
 	}
 }
