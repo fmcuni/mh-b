@@ -46,6 +46,7 @@
 
 .fl-table tr:hover td {
     border-color: transparent;
+    color: black;
 }
 
 /* Responsive */
