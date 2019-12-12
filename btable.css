@@ -36,6 +36,7 @@
 .mh-table thead th {
     color: #ffffff;
     background: #076B9C;
+    text-transform: initial;
 }
 
 .mh-table tr:nth-child(even) {
