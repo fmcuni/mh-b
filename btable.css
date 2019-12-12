@@ -18,7 +18,7 @@
     border-collapse: collapse;
     width: 100%;
     max-width: 100%;
-    white-space: nowrap;
+    white-space: normal;
     background-color: white;
 }
 
@@ -56,6 +56,17 @@
     right: -8px;
     position: absolute;
     bottom: -35px;
+}
+
+/* basic table setting*/
+.mh-table .txt-left{
+    text-align: left;
+}
+.mh-table .txt-center{
+    text-align: center;
+}
+.mh-table .txt-right{
+    text-align: right;
 }
 
 
