@@ -68,7 +68,10 @@
 .mh-table .txt-right{
     text-align: right;
 }
-
+.mh-table a{
+    text-decoration: underline;
+    font-weight:bold;
+}
 
 /* hover row*/
 
