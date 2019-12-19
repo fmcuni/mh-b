@@ -78,7 +78,7 @@
 .mh-table.mouse-hover * {
     transition: ease 0.2s;
 }
-.mh-table.mouse-hover tbody:hover td[rowspan], tr:hover td {
+.mh-table.mouse-hover tr:hover td {
     background: #77aa4330;
     color: black;
 }
