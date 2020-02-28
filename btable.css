@@ -107,6 +107,10 @@
         width: 100%;
 	overflow-x: scroll;
     }
+    .narrow-table .mh-table {
+        display: table;
+        width: 100%;
+    }
     .mh-table.transpose {
         display: block;
         width: 100%;
@@ -118,6 +122,9 @@
         text-align: right;
         font-size: 12px;
         padding: 0 0 10px;
+    }
+	html:lang(zh-HK) narrow-table.table-wrapper:before{
+        display: none;
     }
 	.mh-table.transpose thead th:nth-child(odd) {
 	    color: #ffffff;
