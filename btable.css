@@ -123,7 +123,7 @@
         font-size: 12px;
         padding: 0 0 10px;
     }
-	html:lang(zh-HK) narrow-table.table-wrapper:before{
+	.narrow-table.table-wrapper:before{
         display: none;
     }
 	.mh-table.transpose thead th:nth-child(odd) {
