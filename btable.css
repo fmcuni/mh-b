@@ -303,15 +303,14 @@ button.expand-table {
     color: #333333;
     padding: 10px 50px;
     border-radius: 0 0 20px 20px;
+    transition: 0.5s all ease;
 }
-button.expand-table {
-    margin: -50px auto 20px auto;
-    display: block;
-    border: none;
-    z-index: 999;
-    color: #333333;
-    padding: 10px 50px;
-    border-radius: 0 0 20px 20px;
+button.expand-table:focus {
+    outline: -webkit-focus-ring-color auto 0;
+    outline-width: 0;
+}
+button.expand-table:hover{
+    background:#77aa4330;
 }
 button.expand-table.closed::after{
     content:"展開";
