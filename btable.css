@@ -2,8 +2,41 @@
 /* CSS Document */
 
 /* Editorial Code Styles */
-.editorial-code {display: block;background: linear-gradient(0deg, rgba(7,107,156,1) 30%, rgba(255,255,255,1) 60%);color: #155072;font-size: 18px;font-family: noto-sans;font-weight: bold;line-height: 180%;padding: 30px 24px 20px;margin: 20px;border-top-right-radius: 30px;overflow: hidden;border-bottom-left-radius: 30px;transition: 0.5s all ease;position: relative;}
-.editorial-code::before {content: attr(code-text);width: 100%;height: 100%;font-size: 18px;font-family: 'Noto Sans TC' ;font-weight: bold;line-height: 180%;background: #f5f5f5;display: block;position: absolute;bottom: 10px;left: 0;padding: 30px 24px;color: #155072;border-top-right-radius: 30px;border-bottom-left-radius: 30px;transition: 0.5s all ease;}
+.editorial-code {
+    display: block;
+    background: linear-gradient(0deg, rgba(7,107,156,1) 30%, rgba(255,255,255,1) 60%);
+    color: #484848;
+    font-size: 14px;
+    font-family: noto-sans;
+    font-weight: normal;
+    line-height: 180%;
+    padding: 20px 20px 20px;
+    margin: 20px 5px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    transition: 0.5s all ease;
+    position: relative;
+}
+.editorial-code::before {
+    content: attr(code-text);
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Noto Sans TC';
+    font-weight: normal;
+    line-height: 180%;
+    background: #f5f5f5;
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    padding: 23px 20px 20px;
+    color: #484848;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: 0.5s all ease;
+}
 .editorial-code::after {content: "";display: block;width: 30%;height: 30px;background: #77aa43;position: absolute;bottom: -10px;right: -10px;transform: skew(-30deg);transition: 0.5s all ease;}
 .editorial-code:hover::before {background: #e6e6e6 !important;}
 .editorial-code:hover::after {bottom: 0px;}
