@@ -300,7 +300,7 @@ button.expand-table {
     display: block;
     border: none;
     z-index: 999;
-    color: #333333;
+    color: #666;
     padding: 10px 50px;
     border-radius: 0 0 20px 20px;
     transition: 0.5s all ease;
