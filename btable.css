@@ -234,6 +234,7 @@
         text-align: center;
     }
 }
+/* Sticky Header Styles */
 .mh-table.sticky{
 overflow-y: scroll;
 max-height: 480px;
@@ -280,3 +281,34 @@ top: 0;
     width: 100%;
 }
 }
+/* Expand Table */
+button.expand-table {
+    margin: -50px auto 20px auto;
+    display: block;
+    border: none;
+    z-index: 999;
+    color: #333333;
+    padding: 10px 50px;
+    border-radius: 0 0 20px 20px;
+}
+button.expand-table {
+    margin: -50px auto 20px auto;
+    display: block;
+    border: none;
+    z-index: 999;
+    color: #333333;
+    padding: 10px 50px;
+    border-radius: 0 0 20px 20px;
+}
+button.expand-table.closed::after{
+    content:"展開";
+}
+button.expand-table.closed
+ span{
+    display:none;
+}
+@media (max-width: 767px) {
+button.expand-table {
+    margin: -50px 0 20px 8px;
+}}
+
