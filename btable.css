@@ -214,7 +214,7 @@ top: 0;
     content: " 拖曳查看更多";
     font-family: IcoFont, arial;
     display: flex;
-    width: 100%;
+    width: calc(100% - 5px);
     height: 50px;
     background: linear-gradient(0deg, rgba(248,248,248,1) 0%, rgba(248,248,248,0.8) 50%, rgba(248,248,248,0) 90%);
     position: absolute;
@@ -242,5 +242,8 @@ top: 0;
 .table-wrapper.sticky{
     margin-left: 8px;
     margin-right: -12px;
+}
+.mh-table.sticky::after {
+    width: 100%;
 }
 }
