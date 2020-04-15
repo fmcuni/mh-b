@@ -86,12 +86,12 @@
 .mh-table.mouse-hover * {
     transition: ease 0.2s;
 }
-.mh-table.mouse-hover tr:hover td {
+.mh-table.mouse-hover tbody tr:hover td {
     background: #77aa4330;
     color: black;
 }
 @media (min-width: 768px) {
-	.mh-table.mouse-hover tr:hover td {
+	.mh-table.mouse-hover tbody tr:hover td {
 	    border-color: transparent;
 	}
 }
