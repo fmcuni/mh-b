@@ -201,3 +201,46 @@
         text-align: center;
     }
 }
+.mh-table.sticky{
+overflow-y: scroll;
+max-height: 480px;
+display: block;
+}
+.mh-table.sticky th{
+position: sticky;
+top: 0;
+}
+.mh-table.sticky::after {
+    content: " 拖曳查看更多";
+    font-family: IcoFont, arial;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(0deg, rgba(248,248,248,1) 0%, rgba(248,248,248,0.8) 50%, rgba(248,248,248,0) 90%);
+    position: absolute;
+    bottom: 0;
+    color: grey;
+    font-size: 13px;
+    letter-spacing: 2px;
+    vertical-align: text-bottom;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width: 768px){
+.mh-table.sticky::-webkit-scrollbar {
+    width: 5px;
+}
+.mh-table.sticky::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3); 
+}
+.mh-table.sticky::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:lightgrey;
+}
+}
+@media (max-width: 767px){
+.table-wrapper.sticky{
+    margin-left: 8px;
+    margin-right: -12px;
+}
+}
