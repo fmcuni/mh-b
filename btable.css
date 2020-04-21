@@ -80,7 +80,6 @@
     padding: 8px;
 }
 
-
 .mh-table td {
     border-right: 1px solid #f8f8f8;
     font-size: 12px;
@@ -94,6 +93,10 @@
 
 .mh-table tr:nth-child(even) {
     background: #F8F8F8;
+}
+
+.mh-table img {
+    vertical-align: top;
 }
 
 .table-wrapper:after {
