@@ -75,6 +75,9 @@
     white-space: normal;
     background-color: white;
 }
+.mh-table tr{
+	vertical-align: middle;
+}
 
 .mh-table td, .mh-table th {
     text-align: center;
