@@ -331,7 +331,7 @@ button.expand-table {
 
 /* alt-color-tbody*/
 .mh-table.alt-color-tbody tr{
-    background: #FFFF;
+    background: none;
 }
 .mh-table.alt-color-tbody tbody:nth-child(even) {
     background: #F8F8F8;
