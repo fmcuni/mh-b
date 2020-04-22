@@ -129,6 +129,21 @@
     font-weight:bold;
 }
 
+
+/* alt-color-tbody*/
+
+.mh-table.alt-color-tbody tbody:nth-child(even) {
+    background: #F8F8F8;
+}
+.mh-table.alt-color-tbody tbody:nth-child(odd) {
+    background: #fff;
+}
+.mh-table.alt-color-tbody.mouse-hover tbody:hover td {
+    background: #77aa4330;
+    color: black;
+}
+
+
 /* hover row*/
 
 .mh-table.mouse-hover * {
