@@ -333,10 +333,10 @@ button.expand-table {
 .mh-table.alt-color-tbody tr{
     background: none;
 }
-.mh-table.alt-color-tbody tbody:nth-child(even) {
+.mh-table.alt-color-tbody tbody:nth-child(odd) {
     background: #F8F8F8;
 }
-.mh-table.alt-color-tbody tbody:nth-child(odd) {
+.mh-table.alt-color-tbody tbody:nth-child(even) {
     background: #fff;
 }
 .mh-table.alt-color-tbody.mouse-hover tbody:hover td {
