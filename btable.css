@@ -518,8 +518,19 @@ input.searchable-input{
     margin-bottom: 12px;
     font-family: 'icofont';
     border-radius: 0;
+	color: #333
 }
 input.searchable-input:focus {
 	outline: none;
 	background: #fafafa;
+}
+input.searchable-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #993366;
+  opacity: 1; /* Firefox */
+}
+input.searchable-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #993366;
+}
+input.searchable-input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #993366;
 }
