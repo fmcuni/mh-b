@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $("button.expand-table").remove();
 
     function bindButtonEvt(i) {
-        $('#table' + i).parent().after('<button id="table' + i + '-btn" class="expand-table closed" ><span>收合</span></button>');
+        $('#table' + i + '.sticky').parent().after('<button id="table' + i + '-btn" class="expand-table closed" ><span>收合</span></button>');
         $('#table' + i + '-btn').off('click').click(function() {
             $('#table' + i).toggleClass('sticky');
             $('#table' + i + '-btn').toggleClass('closed');
@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var numtablestickyth = [];
 
     function fixstickywidth(k) {
-        $('#table' + k + ' tbody:last-child').after('<tfoot><tr><td style="width: 999px;"></td></tr></tfoot>');
+        $('#table' + k + '.sticky tbody:last-child').after('<tfoot><tr><td style="width: 999px;"></td></tr></tfoot>');
         numtablestickyth[k] = $('#table' + k + '.sticky th').length;
-        $('#table' + k + ' tfoot td').attr('colspan', numtablestickyth[k]);
+        $('#table' + k + '.sticky tfoot td').attr('colspan', numtablestickyth[k]);
     }
     for (var k = 1; k <= 10; k++) {
         fixstickywidth(k)
