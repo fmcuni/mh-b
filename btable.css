@@ -509,7 +509,7 @@ button.expand-table {
     color: black;
 }
 /* searchable table */
-.searchable-input{
+input.searchable-input{
     width: 100%;
     font-size: 14px;
     padding: 12px 20px 12px 10px;
@@ -519,7 +519,7 @@ button.expand-table {
     font-family: 'icofont';
     border-radius: 0;
 }
-.searchable-input:focus {
+input.searchable-input:focus {
 	outline: none;
 	background: #fafafa;
 }
