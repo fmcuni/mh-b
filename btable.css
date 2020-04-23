@@ -508,3 +508,18 @@ button.expand-table {
     background: #77aa4330;
     color: black;
 }
+/* searchable table */
+.searchable-input{
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 20px 12px 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+    font-family: 'icofont';
+    border-radius: 0;
+}
+.searchable-input:focus {
+	outline: none;
+	background: #fafafa;
+}
