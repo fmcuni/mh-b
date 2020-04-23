@@ -250,6 +250,170 @@
         display: block;
         text-align: center;
     }
+	.mh-table.transpose td, 
+	.mh-table.transpose th{
+		height: 58px;
+	}
+	.mh-table.transpose.td1short td:nth-child(1), 
+	.mh-table.transpose.td1short th:nth-child(1) {
+		height: 38px;
+	}
+	.mh-table.transpose.td2short td:nth-child(2), 
+	.mh-table.transpose.td2short th:nth-child(2) {
+		height: 38px;
+	}
+	.mh-table.transpose.td3short td:nth-child(3), 
+	.mh-table.transpose.td3short th:nth-child(3) {
+		height: 38px;
+	}
+	.mh-table.transpose.td4short td:nth-child(4), 
+	.mh-table.transpose.td4short th:nth-child(4) {
+		height: 38px;
+	}
+	.mh-table.transpose.td5short td:nth-child(5), 
+	.mh-table.transpose.td5short th:nth-child(5) {
+		height: 38px;
+	}
+	.mh-table.transpose.td6short td:nth-child(6), 
+	.mh-table.transpose.td6short th:nth-child(6) {
+		height: 38px;
+	}
+	.mh-table.transpose.td7short td:nth-child(7), 
+	.mh-table.transpose.td7short th:nth-child(7) {
+		height: 38px;
+	}
+	.mh-table.transpose.td8short td:nth-child(8), 
+	.mh-table.transpose.td8short th:nth-child(8) {
+		height: 38px;
+	}
+	.mh-table.transpose.td9short td:nth-child(9), 
+	.mh-table.transpose.td9short th:nth-child(9) {
+		height: 38px;
+	}
+	.mh-table.transpose.td10short td:nth-child(10), 
+	.mh-table.transpose.td10short th:nth-child(10) {
+		height: 38px;
+	}
+	.mh-table.transpose.td1high td:nth-child(1), 
+	.mh-table.transpose.td1high th:nth-child(1) {
+		height: 95px;
+	}
+	.mh-table.transpose.td2high td:nth-child(2), 
+	.mh-table.transpose.td2high th:nth-child(2) {
+		height: 95px;
+	}
+	.mh-table.transpose.td3high td:nth-child(3), 
+	.mh-table.transpose.td3high th:nth-child(3) {
+		height: 95px;
+	}
+	.mh-table.transpose.td4high td:nth-child(4), 
+	.mh-table.transpose.td4high th:nth-child(4) {
+		height: 95px;
+	}
+	.mh-table.transpose.td5high td:nth-child(5), 
+	.mh-table.transpose.td5high th:nth-child(5) {
+		height: 95px;
+	}
+	.mh-table.transpose.td6high td:nth-child(6), 
+	.mh-table.transpose.td6high th:nth-child(6) {
+		height: 95px;
+	}
+	.mh-table.transpose.td7high td:nth-child(7), 
+	.mh-table.transpose.td7high th:nth-child(7) {
+		height: 95px;
+	}
+	.mh-table.transpose.td8high td:nth-child(8), 
+	.mh-table.transpose.td8high th:nth-child(8) {
+		height: 95px;
+	}
+	.mh-table.transpose.td9high td:nth-child(9), 
+	.mh-table.transpose.td9high th:nth-child(9) {
+		height: 95px;
+	}
+	.mh-table.transpose.td10high td:nth-child(10), 
+	.mh-table.transpose.td10high th:nth-child(10) {
+		height: 95px;
+	}
+	.mh-table.transpose.td1higher  td:nth-child(1), 
+	.mh-table.transpose.td1higher  th:nth-child(1) {
+		height: 180px;
+	}
+	.mh-table.transpose.td2higher  td:nth-child(2), 
+	.mh-table.transpose.td2higher  th:nth-child(2) {
+		height: 180px;
+	}
+	.mh-table.transpose.td3higher  td:nth-child(3), 
+	.mh-table.transpose.td3higher  th:nth-child(3) {
+		height: 180px;
+	}
+	.mh-table.transpose.td4higher  td:nth-child(4), 
+	.mh-table.transpose.td4higher  th:nth-child(4) {
+		height: 180px;
+	}
+	.mh-table.transpose.td5higher  td:nth-child(5), 
+	.mh-table.transpose.td5higher  th:nth-child(5) {
+		height: 180px;
+	}
+	.mh-table.transpose.td6higher  td:nth-child(6), 
+	.mh-table.transpose.td6higher  th:nth-child(6) {
+		height: 180px;
+	}
+	.mh-table.transpose.td7higher  td:nth-child(7), 
+	.mh-table.transpose.td7higher  th:nth-child(7) {
+		height: 180px;
+	}
+	.mh-table.transpose.td8higher  td:nth-child(8), 
+	.mh-table.transpose.td8higher  th:nth-child(8) {
+		height: 180px;
+	}
+	.mh-table.transpose.td9higher  td:nth-child(9), 
+	.mh-table.transpose.td9higher  th:nth-child(9) {
+		height: 180px;
+	}
+	.mh-table.transpose.td10higher  td:nth-child(10), 
+	.mh-table.transpose.td10higher  th:nth-child(10) {
+		height: 180px;
+	}
+	.mh-table.transpose.td1extra-high  td:nth-child(1), 
+	.mh-table.transpose.td1extra-high  th:nth-child(1) {
+		height: 300px;
+	}
+	.mh-table.transpose.td2extra-high  td:nth-child(2), 
+	.mh-table.transpose.td2extra-high  th:nth-child(2) {
+		height: 300px;
+	}
+	.mh-table.transpose.td3extra-high  td:nth-child(3), 
+	.mh-table.transpose.td3extra-high  th:nth-child(3) {
+		height: 300px;
+	}
+	.mh-table.transpose.td4extra-high  td:nth-child(4), 
+	.mh-table.transpose.td4extra-high  th:nth-child(4) {
+		height: 300px;
+	}
+	.mh-table.transpose.td5extra-high  td:nth-child(5), 
+	.mh-table.transpose.td5extra-high  th:nth-child(5) {
+		height: 300px;
+	}
+	.mh-table.transpose.td6extra-high  td:nth-child(6), 
+	.mh-table.transpose.td6extra-high  th:nth-child(6) {
+		height: 300px;
+	}
+	.mh-table.transpose.td7extra-high  td:nth-child(7), 
+	.mh-table.transpose.td7extra-high  th:nth-child(7) {
+		height: 300px;
+	}
+	.mh-table.transpose.td8extra-high  td:nth-child(8), 
+	.mh-table.transpose.td8extra-high  th:nth-child(8) {
+		height: 300px;
+	}
+	.mh-table.transpose.td9extra-high  td:nth-child(9), 
+	.mh-table.transpose.td9extra-high  th:nth-child(9) {
+		height: 300px;
+	}
+	.mh-table.transpose.td10extra-high  td:nth-child(10), 
+	.mh-table.transpose.td10extra-high  th:nth-child(10) {
+		height: 300px;
+	}
 }
 /* Sticky Header Styles */
 .mh-table.sticky{
