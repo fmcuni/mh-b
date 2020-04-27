@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // fix sticky table width
     var numtablestickyth = [];
     function fixstickywidth(k) {
-        $('#table' + k + '.sticky tbody:last-child').after('<tfoot><tr><td style="width: 999px;"></td></tr></tfoot>');
+        $('#table' + k + '.sticky tbody:last-child').after('<tfoot><tr><td></td></tr></tfoot>');
         numtablestickyth[k] = $('#table' + k + '.sticky th').length;
         $('#table' + k + '.sticky tfoot td').attr('colspan', numtablestickyth[k]);
     }
