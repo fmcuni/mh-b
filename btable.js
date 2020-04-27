@@ -53,5 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
         bindButtonEvt(t)
         searchabletable(t)
         fixstickywidth(t)
+		customtableheaderwidth(t)
     }
 });
