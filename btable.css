@@ -67,6 +67,7 @@
 }
 .mh-table {
     font-size: 12px;
+	line-height: 150%;
     font-weight: normal;
     border: none;
     border-collapse: collapse;
