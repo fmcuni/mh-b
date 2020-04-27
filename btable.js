@@ -10,48 +10,47 @@ document.addEventListener("DOMContentLoaded", function() {
       
     // expandable table button
     $("button.expand-table").remove();
-    function bindButtonEvt(t) {
-        $('#table' + t + '.sticky').parent().after('<button id="table' + t + '-btn" class="expand-table closed" ><span>收合</span></button>');
-        $('#table' + t + '-btn').off('click').click(function() {
-            $('#table' + t).toggleClass('sticky');
-            $('#table' + t + '-btn').toggleClass('closed');
+    function bindButtonEvt(i) {
+        $('#table' + i + '.sticky').parent().after('<button id="table' + i + '-btn" class="expand-table closed" ><span>收合</span></button>');
+        $('#table' + i + '-btn').off('click').click(function() {
+            $('#table' + i).toggleClass('sticky');
+            $('#table' + i + '-btn').toggleClass('closed');
         });
     }
-
+    for (var i = 1; i <= 10; i++) {
+        bindButtonEvt(i)
+    }
     // fix sticky table width
     var numtablestickyth = [];
-    function fixstickywidth(t) {
-        $('#table' + t + '.sticky tbody:last-child').after('<tfoot><tr><td></td></tr></tfoot>');
-        numtablestickyth[t] = $('#table' + t + '.sticky th').length;
-        $('#table' + t + '.sticky tfoot td').attr('colspan', numtablestickyth[t]);
+    function fixstickywidth(k) {
+        $('#table' + k + '.sticky tbody:last-child').after('<tfoot><tr><td style="width: 999px;"></td></tr></tfoot>');
+        $('#table' + k + '.sticky tbody:last-child').after('<tfoot><tr><td></td></tr></tfoot>');
+        numtablestickyth[k] = $('#table' + k + '.sticky th').length;
+        $('#table' + k + '.sticky tfoot td').attr('colspan', numtablestickyth[k]);
     }
-    
+    for (var k = 1; k <= 10; k++) {
+        fixstickywidth(k)
+    }
     // searchable table
-    function searchabletable(tx) {
-        $('#table' + t + '.search').before('<input class="searchable-input" id="table' + t + '-search" type="text" placeholder="  搜索以下表格..">');
-        $('#table' + t + '-search').on('keyup', function() {
+    function searchabletable(l) {
+        $('#table' + l + '.search').before('<input class="searchable-input" id="table' + l + '-search" type="text" placeholder="  搜索以下表格..">');
+        $('#table' + l + '-search').on('keyup', function() {
             var value = $(this).val().toLowerCase();
-            $('#table' + t + '.search tbody tr').filter(function() {
+            $('#table' + l + '.search tbody tr').filter(function() {
                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
         });
     }
+    for (var l = 1; l <= 10; l++) {
+        searchabletable(l)
+    }
     
     // custom table header width
-    function customtableheaderwidth(t) {
     if ($(window).width() > 767) {
-    $('#table' + t + '.mh-table th:nth-child(n+2)').css({"width":$('#table' + t + '.mh-table').attr('col-width')});
+    $('.mh-table th:nth-child(n+2)').css({"width":$('.mh-table').attr('col-width')});
     }
     else {
-    $('#table' + t + '.mh-table th:nth-child(n+2)').css({"min-width":$('#table' + t + '.mh-table').attr('mo-col-width')});
-    $('#table' + t + '.mh-table th:first-child').css({"min-width":$('#table' + t + '.mh-table').attr('mo-left-col-head-width')});
-    }
-
-    // loop for 10tables
-    for (var t = t; t <= 10; t++) {
-        searchabletable(t);
-        bindButtonEvt(t);
-        fixstickywidth(t);
-        customtableheaderwidth(t);
+    $('.mh-table th:nth-child(n+2)').css({"min-width":$('.mh-table').attr('mo-col-width')});
+    $('.mh-table th:first-child').css({"min-width":$('.mh-table').attr('mo-left-col-head-width')});
     }
 });
