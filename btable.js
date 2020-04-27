@@ -40,28 +40,28 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    $(window).resize(resizerestart);
     function resizerestart() {
-    // custom table header width
-    function customtableheaderwidth(t) {
-        if ($(window).width() > 767) {
-            $('#table' + t + '.mh-table th:nth-child(n+2)').css({
-                "width": $('#table' + t + '.mh-table').attr('col-width')
-            });
-        } else {
-            $('#table' + t + '.mh-table th:nth-child(n+2)').css({
-                "min-width": $('#table' + t + '.mh-table').attr('mo-col-width')
-            });
-            $('#table' + t + '.mh-table th:first-child').css({
-                "min-width": $('#table' + t + '.mh-table').attr('mo-left-col-head-width')
-            });
+        // custom table header width
+        function customtableheaderwidth(t) {
+            if ($(window).width() > 767) {
+                $('#table' + t + '.mh-table th:nth-child(n+2)').css({
+                    "width": $('#table' + t + '.mh-table').attr('col-width')
+                });
+            } else {
+                $('#table' + t + '.mh-table th:nth-child(n+2)').css({
+                    "min-width": $('#table' + t + '.mh-table').attr('mo-col-width')
+                });
+                $('#table' + t + '.mh-table th:first-child').css({
+                    "min-width": $('#table' + t + '.mh-table').attr('mo-left-col-head-width')
+                });
+            }
+        }
+        //loop for 10 tables
+        for (var t = 1; t <= 10; t++) {
+            customtableheaderwidth(t)
         }
     }
-    //loop for 10 tables
-    for (var t = 1; t <= 10; t++) {
-        customtableheaderwidth(t)
-    }
-}
+    $(window).resize(resizerestart);
     //loop for 10 tables
     for (var t = 1; t <= 10; t++) {
         bindButtonEvt(t)
