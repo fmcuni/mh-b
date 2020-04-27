@@ -92,6 +92,11 @@
     text-transform: initial;
 }
 
+.mh-table thead td {
+    background: #0f4f73;
+    color: #FFFFFF;
+    font-size: 14px;
+}
 .mh-table tr:nth-child(even) {
     background: #F8F8F8;
 }
