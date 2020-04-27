@@ -431,6 +431,11 @@ display: block;
 position: sticky;
 top: 0;
 }
+.mh-table.sticky tfoot td {
+    width: 999px;
+    background: #F8F8F8;
+    height: 50px;
+}
 .mh-table.sticky::after {
     content: " 拖曳查看更多";
     font-family: IcoFont, arial;
