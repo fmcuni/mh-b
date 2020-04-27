@@ -86,11 +86,6 @@
     font-size: 12px;
 }
 
-.mh-table thead td {
-    text-align: left;
-    padding-left: 18px;
-}
-
 .mh-table thead th {
     color: #ffffff;
     background: #076B9C;
@@ -163,14 +158,18 @@
 /* Responsive */
 
 @media (max-width: 767px) {
-	.table-wrapper{
+	.table-wrapper {
 		margin-left: 8px;
 	}
     .mh-table {
         display: block;
         width: 100%;
-	overflow-x: scroll;
+		overflow-x: scroll;
     }
+	.mh-table thead td {
+		text-align: left;
+		padding-left: 18px;
+	}
     .narrow-table .mh-table {
         display: table;
         width: 100%;
