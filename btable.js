@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // searchable table
     function searchabletable(t) {
-        $('#table' + t + '.search').before('<input class="searchable-input" id="table' + l + '-search" type="text" placeholder="  搜索以下表格..">');
+        $('#table' + t + '.search').before('<input class="searchable-input" id="table' + t + '-search" type="text" placeholder="  搜索以下表格..">');
         $('#table' + t + '-search').on('keyup', function() {
             var value = $(this).val().toLowerCase();
             $('#table' + t + '.search tbody tr').filter(function() {
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	//loop for 10 tables
 	for (var t = 1; t <= 10; t++) {
         bindButtonEvt(t)
-		searchabletable(t)
-		fixstickywidth(t)
+        searchabletable(t)
+        fixstickywidth(t)
     }
 });
