@@ -61,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
             customtableheaderwidth(t)
         }
     }
-    $(window).resize(resizerestart);
     $(document).ready(resizerestart);
+    $(window).resize(resizerestart);
     //loop for 10 tables
     for (var t = 1; t <= 10; t++) {
         bindButtonEvt(t)
