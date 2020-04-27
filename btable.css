@@ -545,4 +545,4 @@ input.searchable-input::-ms-input-placeholder { /* Microsoft Edge */
   color: #993366;
 }
 /*left column header*/
-table.mh-table.left-column-header td:first-child {font-weight: bold;color: black;font-size: 14px;border-right: 2px dotted #dddddd;}
+table.mh-table.left-col-head td:first-child {font-weight: bold;color: black;font-size: 14px;border-right: 2px dotted #dddddd;}
