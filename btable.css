@@ -1,6 +1,89 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Button */
+.btn {
+    padding: 8px 25px 5px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #969696;
+    line-height: 1.5;
+    text-align: center;
+    border: none;
+    position: relative;
+    border-radius: 5px;
+    border-bottom: 3px #797979 solid;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #ffffff;
+    transform: translate(0, -3px);
+    -webkit-box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 8px -10px rgba(0,0,0,0.75);
+}
+
+.btn.conversion {
+	background: #f58423;
+	border-bottom-color: #dd6335;
+}
+.btn.link {
+	background: #77a843;
+	border-bottom-color: #547f3b;
+}
+
+/* Links */
+
+.link, .anchor{
+	color: #016d9b;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.link:visited, .anchor:visited{
+	color: #016d9b;
+}
+.link .further-reading{
+	color: #ff9900;
+}
+.tooltip .tooltip-inner {
+	border: none;
+	background: #e4e8ea;
+	max-width: 480px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+	overflow: hidden;
+}
+.tooltip.top > .tooltip-arrow {
+	width:10px;
+	height:10px;
+	background:#e4e8ea;
+	border:none;
+	display:block;
+	transform: rotate(45deg);
+	z-index:-1;
+}
+
+/* Headings */
+#page #primary #content .entry-content .h2 {
+    color: #993366 !important;
+    font-weight: bold;
+}
+#page #primary #content .entry-content .h3{
+color: #156C9A;
+font-weight: bold;
+}
+#page #primary #content .entry-content .h4{
+color: #72A748;
+font-weight: bold;
+}
+#page #primary #content .entry-content .h5{
+font-weight: bold;
+}
+
+
 /* Editorial Code Styles */
 .editorial-code {
     display: block;
