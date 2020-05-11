@@ -35,17 +35,16 @@
 }
 
 /* Links */
-
-.link, .anchor{
+.entry-content .link, .entry-content .anchor{
 	color: #016d9b;
 	font-size: 14px;
 	font-weight: bold;
 	text-decoration: underline;
 }
-.link:visited, .anchor:visited{
+.entry-content .link:visited, .entry-content .anchor:visited{
 	color: #016d9b;
 }
-.link .further-reading{
+.entry-content .link.further-reading{
 	color: #ff9900;
 }
 .tooltip .tooltip-inner {
