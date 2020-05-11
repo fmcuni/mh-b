@@ -69,17 +69,23 @@
 #page #primary #content .entry-content .h2 {
     color: #993366 !important;
     font-weight: bold;
+		margin: 0;
+    line-height: 2;
 }
 #page #primary #content .entry-content .h3{
-color: #156C9A;
-font-weight: bold;
+		color: #156C9A;
+		font-weight: bold;
+		margin: 0;
+    line-height: 2;
 }
 #page #primary #content .entry-content .h4{
-color: #72A748;
-font-weight: bold;
+		color: #72A748;
+		font-weight: bold;
+		margin: 0;
+    line-height: 2;
 }
 #page #primary #content .entry-content .h5{
-font-weight: bold;
+		font-weight: bold;
 }
 
 
