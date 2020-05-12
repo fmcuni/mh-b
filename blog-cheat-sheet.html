@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 <script>
@@ -91,7 +91,7 @@ select {
     Copy to clipboard
 </button>
 
-<h2>Blog Front Page Link</h2>
+<h2>Link - "MoneyHero"</h2>
 <textarea id="mhlink"  rows="2">
 <a class="link link-on-tip" href="https://www.moneyhero.com.hk/blog/zh/" target="_blank">MoneyHero</a>
 </textarea>
@@ -99,15 +99,15 @@ select {
     Copy to clipboard
 </button>
 
-<h2>Facebook Page</h2>
+<h2>Link - "Facebook Page"</h2>
 <textarea id="fbpage"  rows="2">
-<a class="link link-on-tip" href="https://www.facebook.com/MoneyHero.com.hk/" target="_blank">Facebook專頁</a>
+<a class="link link-on-tip" href="https://www.facebook.com/MoneyHero.com.hk/" target="_blank">Facebook Page</a>
 </textarea>
 <button class="btn" data-clipboard-action="copy" data-clipboard-target="#fbpage">
     Copy to clipboard
 </button>
 
-<h2>Back to top</h2>
+<h2>Anchor - "回到頁首"</h2>
 <textarea id="back-to-top"  rows="1">
 <a class="anchor back-to-top" href="#primary">回到頁首</a>
 </textarea>
@@ -115,14 +115,31 @@ select {
     Copy to clipboard
 </button>
 
-<h2>Footer text</h2>
-<textarea id="Footer"  rows="5">
-想知道最新嘅理財貼士，就要留意 <a class="link link-on-tip" href="https://www.moneyhero.com.hk/blog/zh/" target="_blank">MoneyHero Blog</a> ，同埋緊貼我哋嘅 <a class="link link-on-tip" href="https://www.facebook.com/MoneyHero.com.hk/" target="_blank">Facebook Page</a>
+<h2>Anchor</h2>
+<label for="anchortype">anchor type: </label>
+<select class="anchors" id="anchortype" name="anchortype">
+<option value="down">go down</option>
+<option value="up">go up</option>
+</select><br>
+<label for="anchortxt">anchor text: </label>
+<textarea class="anchors rightinput" id="anchortxt" rows="1" placeholder="Anchor text" style="width: 370px;display: inline-block;vertical-align: middle;">
+</textarea><br>
+<label for="anchorid">anchor href: </label>
+<textarea class="anchors rightinput" id="anchorid" rows="1" placeholder="Anchor ID (including #)" style="width: 370px;display: inline-block;vertical-align: middle;">
+</textarea><br>
+<textarea id="anchor"  rows="1">
 </textarea>
-<button class="btn" data-clipboard-action="copy" data-clipboard-target="#Footer">
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#anchor">
     Copy to clipboard
 </button>
-
+<script>
+$('.anchors').on('input', function() {
+	var anchortype = $('#anchortype').val();
+	var anchortxt = $('#anchortxt').val();
+	var anchorid = $('#anchorid').val();
+	$('#anchor').val('<a class="anchor ' + anchortype + '" href="' + anchorid + '">' + anchortxt + '</a>');
+})
+</script>
 
 
 <h2>Heading</h2>
@@ -294,3 +311,11 @@ $('.custom-ac-btn').on('input', function() {
 <script>new ClipboardJS('.btn');</script>
 </body>
 </html>
+
+<h2>Footer text</h2>
+<textarea id="Footer"  rows="5">
+想知道最新嘅理財貼士，就要留意 <a class="link link-on-tip" href="https://www.moneyhero.com.hk/blog/zh/" target="_blank">MoneyHero Blog</a> ，同埋緊貼我哋嘅 <a class="link link-on-tip" href="https://www.facebook.com/MoneyHero.com.hk/" target="_blank">Facebook Page</a>
+</textarea>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#Footer">
+    Copy to clipboard
+</button>
