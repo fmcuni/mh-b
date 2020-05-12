@@ -70,7 +70,7 @@
 }
 .entry-content a.anchor.down:hover:after {
     opacity:1;
-	bottom:-4px;
+	bottom:-5px;
 }
 .entry-content a.anchor.down:hover {
     transform: translate(0,-2px) !important;
@@ -89,7 +89,7 @@
 }
 .entry-content a.anchor.up:hover:after {
     opacity:1;
-	Top:-2px;
+	Top:-5px;
 }
 .entry-content a.anchor.up:hover {
     transform: translate(0,2px) !important;
