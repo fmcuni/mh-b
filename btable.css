@@ -63,13 +63,14 @@
     font-size: 14px;
     line-height:0.5;
     position:absolute;
-    bottom:-2px;
+    bottom:0;
     left:calc(50% - 7px);
     opacity: 0;
     transition: all 0.5s ease;
 }
 .entry-content a.anchor.down:hover:after {
     opacity:1;
+	bottom:-4px;
 }
 .entry-content a.anchor.down:hover {
     transform: translate(0,-2px) !important;
@@ -81,13 +82,14 @@
     font-size: 14px;
     line-height:0.5;
     position:absolute;
-    Top:-2px;
+    Top: 0;
     left:calc(50% - 7px);
     opacity: 0;
     transition: all 0.5s ease;
 }
 .entry-content a.anchor.up:hover:after {
     opacity:1;
+	Top:-2px;
 }
 .entry-content a.anchor.up:hover {
     transform: translate(0,2px) !important;
