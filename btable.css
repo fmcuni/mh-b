@@ -48,6 +48,51 @@
 .entry-content .link.further-reading{
 	color: #ff9900;
 }
+
+
+.entry-content a.anchor {
+    transition: all 0.2s ease;
+    transform-origin: bottom;
+    display: inline-block;
+    position: relative;
+}
+.entry-content a.anchor.down:after {
+    content:"";
+    display:block;
+    font-family: "icofont";
+    font-size: 14px;
+    line-height:0.5;
+    position:absolute;
+    bottom:-2px;
+    left:calc(50% - 7px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.entry-content a.anchor.down:hover:after {
+    opacity:1;
+}
+.entry-content a.anchor.down:hover {
+    transform: translate(0,-2px) !important;
+}
+.entry-content a.anchor.up:after {
+    content:"";
+    display:block;
+    font-family: "icofont";
+    font-size: 14px;
+    line-height:0.5;
+    position:absolute;
+    Top:-2px;
+    left:calc(50% - 7px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.entry-content a.anchor.up:hover:after {
+    opacity:1;
+}
+.entry-content a.anchor.up:hover {
+    transform: translate(0,2px) !important;
+}
+
 .tooltip .tooltip-inner {
 	border: none;
 	background: #e4e8ea;
