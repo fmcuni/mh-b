@@ -1,6 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Fix page */
+#page.site {
+    overflow: visible;
+}
+#primary.site-content {
+    padding: 0;
+}
+
+
 /* Button */
 .btn {
     padding: 8px 25px 5px 25px;
@@ -135,6 +144,9 @@
     font-weight: bold;
 		margin: 0;
     line-height: 2;
+}
+#page #primary #content .entry-content .h2 {
+    text-align: left;
 }
 #page #primary #content .entry-content .h3{
 		color: #156C9A;
