@@ -94,7 +94,23 @@
 .entry-content a.anchor.up:hover {
     transform: translate(0,2px) !important;
 }
-
+.entry-content .anchor.back-to-top:before {
+	content: "";
+	font-family: "icofont";
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 17px;
+	margin: 0 3px 0 0;
+}
+.entry-content .anchor.back-to-top {
+    text-decoration: none !important;
+    border: 1px #016d9b solid !important;
+    padding: 10px 10px 7px 7px;
+    margin: 20px 0;
+    border-radius: 5px;
+	line-height:1.5;
+	display: inline;
+}
 .tooltip .tooltip-inner {
 	border: none;
 	background: #e4e8ea;
@@ -111,23 +127,6 @@
 	display:block;
 	transform: rotate(45deg);
 	z-index:-1;
-}
-.back-to-top:before {
-	content: "";
-	font-family: "icofont";
-	display: inline-block;
-	vertical-align: baseline;
-	font-size: 17px;
-	margin: 0 3px 0 0;
-}
-.back-to-top {
-    text-decoration: none !important;
-    border: 1px #016d9b solid !important;
-    padding: 10px 10px 7px 7px;
-    margin: 20px 0;
-    border-radius: 5px;
-	line-height:1.5;
-	display: inline;
 }
 
 /* Headings */
