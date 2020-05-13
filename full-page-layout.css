@@ -237,8 +237,8 @@
 	{
 		color: #fff;
 	}
-	#page #primary #content .entry-content .greenbg p,
-	#page #primary #content .entry-content .bluebg p
+	#page #primary #content .entry-content p.caption,
+	#page #primary #content .entry-content p.caption
 	{
 		display: inline-block;
 		max-width: 480px;
