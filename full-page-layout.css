@@ -89,6 +89,12 @@
         font-weight: bold !important;
         font-size: 32px !important;
     }
+	#page #primary #content .entry-content h2.footer {
+        color: #076b9c !important;
+        text-align: center !important;
+        font-weight: bold !important;
+        font-size: 32px !important;
+    }
     #page #primary #content .entry-content .bluebg h2.h2,
     #page #primary #content .entry-content .greenbg h2.h2 {
         color: #ffffff !important;
