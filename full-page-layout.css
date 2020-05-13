@@ -231,15 +231,14 @@
 	#page #primary #content .entry-content .greenbg .see-more *,
 	#page #primary #content .entry-content .bluebg .see-more *,
 	#page #primary #content .entry-content .greenbg .back-to-top,
-	#page #primary #content .entry-content .bluebg .back-to-top,
-	#page #primary #content .entry-content .greenbg p,
-	#page #primary #content .entry-content .bluebg p
+	#page #primary #content .entry-content .bluebg .back-to-top
 	{
 		color: #fff;
 	}
 	#page #primary #content .entry-content p.caption,
 	#page #primary #content .entry-content p.caption
 	{
+		color:#fff;
 		display: block;
 		max-width: 480px;
 		text-align: center;
