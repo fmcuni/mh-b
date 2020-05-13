@@ -217,11 +217,6 @@
 		color: inherit;
 		border-color: lightgray;
 	}
-	#page #primary #content .entry-content .greenbg .see-more *,
-	#page #primary #content .entry-content .bluebg .see-more *
-	{
-		color: #fff;
-	}
 	#page #primary #content .entry-content .back-to-top {
 		display: block;
 		margin: 20px 0;
@@ -233,8 +228,12 @@
 		font-family: icofont;
 		font-size: 20px;
 	}
+	#page #primary #content .entry-content .greenbg .see-more *,
+	#page #primary #content .entry-content .bluebg .see-more *,
 	#page #primary #content .entry-content .greenbg .back-to-top,
-	#page #primary #content .entry-content .bluebg .back-to-top
+	#page #primary #content .entry-content .bluebg .back-to-top,
+	#page #primary #content .entry-content .greenbg p,
+	#page #primary #content .entry-content .bluebg p
 	{
 		color: #fff;
 	}
