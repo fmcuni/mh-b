@@ -1,5 +1,8 @@
 /* Reset style*/
-    #page #primary #content .entry-content p:empty {
+    #page {
+		overflow: visible;
+	}
+	#page #primary #content .entry-content p:empty {
         display: none;
     }
     #page #secondary {
