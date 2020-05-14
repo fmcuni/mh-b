@@ -190,6 +190,7 @@ $('.heading').on('input', function() {
 <select class="custom-link" id="linktype" name="linktype">
 <option value="further-reading">延伸閱讀</option>
 <option value="related-reading">相關閱讀</option>
+<option value="series-reading">SEO合集</option>
 <option value="">其他</option>
 </select><br>
 <label for="tooltip">show url on top: </label>
@@ -220,7 +221,6 @@ $('.custom-link').on('input', function() {
 	if (linktype == "further-reading") {
 	front = further;
 	} else if (linktype == "related-reading"){
-	
 	front = related;
 	} else {
 	front = "";
