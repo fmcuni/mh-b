@@ -44,6 +44,29 @@
 	border-bottom-color: #547f3b;
 }
 
+
+/* Text box */
+.entry-content .text-box{
+    display: inline-block;
+    padding: 0.3em 0.7em 0.2em;
+    background: #155072;
+    border-radius: 20px;
+    color: #fff;
+    line-height: 1;
+    margin-right: 0.5em;
+}
+.entry-content .text-box.bluebg{
+    background: #155072;
+}
+.entry-content .text-box.orangebg{
+    background: #f58423;
+}
+.entry-content .text-box.greenbg{
+    background: #77a843;
+}
+
+
+
 /* Links */
 .entry-content .link, .entry-content .anchor{
 	color: #016d9b;
