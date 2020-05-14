@@ -57,7 +57,10 @@
 .entry-content .link.further-reading{
 	color: #ff9900;
 }
-
+.entry-content .link.series-reading{
+	color: #ff9900;
+	text-decoration: none;
+}
 
 .entry-content a.anchor {
     transition: all 0.2s ease;
