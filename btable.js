@@ -5,7 +5,25 @@ if (window.isInited !== true) {
     document.querySelector('head').innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" >';
 	document.querySelector('head').innerHTML += '<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b066e931f67732f"></script>';
 	document.addEventListener("DOMContentLoaded", function() {
-        //addthis sharing widget
+       //check ac button implementation 
+	   $('.blog-trackable').each(function(){
+			var gacategory = $(this)[0].hasAttribute('ga-category');
+			var gaaction = $(this)[0].hasAttribute('ga-action');
+			var galabel = $(this)[0].hasAttribute('ga-label');
+			var gaprovider = $(this)[0].hasAttribute('ga-provider');
+			var gaproduct = $(this)[0].hasAttribute('ga-product');
+			var labelname = $(this).attr('ga-label');
+			if (gaproduct == false || gaprovider == false || gacategory == false || gaaction == false || galabel == false){
+			console.log("Missing tracking parameter! More info: " + labelname);
+			}
+			delete gacategory;
+			delete gaaction;
+			delete galabel;
+			delete gaprovider;
+			delete gaproduct;
+		});
+
+	   //addthis sharing widget
 		$(document.body).append('<div class="addthis_inline_share_toolbox"></div>');
 		
 		// editorial code box
