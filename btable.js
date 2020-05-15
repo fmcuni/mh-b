@@ -3,7 +3,18 @@ if (window.isInited !== true) {
     document.querySelector('head').innerHTML += '<link rel="stylesheet" href="https://combinatronics.com/fmcuni/mh-b/master/btable.css" type="text/css"/>';
     document.querySelector('head').innerHTML += '<link rel="stylesheet" href="https://gitcdn.link/repo/fmcuni/mh-b/master/font/icofont.min.css" type="text/css"/>';
     document.querySelector('head').innerHTML += '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" >';
-	document.querySelector('head').innerHTML += '<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b066e931f67732f"></script>';
+	function downloadJSAtOnload() {
+	var element = document.createElement("script");
+	element.src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b066e931f67732f";
+	document.body.appendChild(element);
+	}
+	if (window.addEventListener)
+	window.addEventListener("load", downloadJSAtOnload, false);
+	else if (window.attachEvent)
+	window.attachEvent("onload", downloadJSAtOnload);
+	else window.onload = downloadJSAtOnload;
+	
+	
 	document.addEventListener("DOMContentLoaded", function() {
         //addthis sharing widget
 		$(document.body).append('<div class="addthis_inline_share_toolbox"></div>');
