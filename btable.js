@@ -16,7 +16,28 @@ if (window.isInited !== true) {
 	
 	
 	document.addEventListener("DOMContentLoaded", function() {
-        //addthis sharing widget
+       //check ac button implementation 
+	   $('.blog-trackable').each(function(){
+			var gacategory = $(this)[0].hasAttribute('ga-category');
+			var gaaction = $(this)[0].hasAttribute('ga-action');
+			var galabel = $(this)[0].hasAttribute('ga-label');
+			var gaprovider = $(this)[0].hasAttribute('ga-provider');
+			var gaproduct = $(this)[0].hasAttribute('ga-product');
+			var labelname = $(this).attr('ga-label');
+			if (gaproduct == false || gaprovider == false || gacategory == false || gaaction == false || galabel == false){
+				console.log("Missing tracking parameter! More info: " + labelname);
+			} else{
+				console.log("Tracking parameter implemented correctly! More info: " + labelname);
+			}
+			delete gacategory;
+			delete gaaction;
+			delete galabel;
+			delete gaprovider;
+			delete gaproduct;
+			
+		});
+
+	   //addthis sharing widget
 		$(document.body).append('<div class="addthis_inline_share_toolbox"></div>');
 		
 		// editorial code box
