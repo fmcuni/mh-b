@@ -14,13 +14,16 @@ if (window.isInited !== true) {
 			var gaproduct = $(this)[0].hasAttribute('ga-product');
 			var labelname = $(this).attr('ga-label');
 			if (gaproduct == false || gaprovider == false || gacategory == false || gaaction == false || galabel == false){
-			console.log("Missing tracking parameter! More info: " + labelname);
+				console.log("Missing tracking parameter! More info: " + labelname);
+			} else{
+				console.log("Tracking parameter implemented correctly!" + labelname);
 			}
 			delete gacategory;
 			delete gaaction;
 			delete galabel;
 			delete gaprovider;
 			delete gaproduct;
+			
 		});
 
 	   //addthis sharing widget
