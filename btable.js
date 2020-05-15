@@ -16,7 +16,7 @@ if (window.isInited !== true) {
 			if (gaproduct == false || gaprovider == false || gacategory == false || gaaction == false || galabel == false){
 				console.log("Missing tracking parameter! More info: " + labelname);
 			} else{
-				console.log("Tracking parameter implemented correctly!" + labelname);
+				console.log("Tracking parameter implemented correctly! More info:" + labelname);
 			}
 			delete gacategory;
 			delete gaaction;
