@@ -15,13 +15,15 @@ if (window.isInited !== true) {
 	else window.onload = downloadJSAtOnload;
 	
 	document.addEventListener("load", function() {
-	//remove blog tags after the 4th tags
-		var tagscounter;
-		var afterthattags = $('a[rel="tag"]').length * 2 -8;
-		$('a[rel="tag"]').eq(3).nextAll().css('display','none');
-		for (tagscounter = 0; tagscounter < afterthattags; tagscounter++) {
-			$('a[rel="tag"]').eq(3).get(0).nextSibling.remove();
-		}
+		setTimeout(function(){
+			//remove blog tags after the 4th tags
+			var tagscounter;
+			var afterthattags = $('a[rel="tag"]').length * 2 -8;
+			$('a[rel="tag"]').eq(3).nextAll().css('display','none');
+			for (tagscounter = 0; tagscounter < afterthattags; tagscounter++) {
+				$('a[rel="tag"]').eq(3).get(0).nextSibling.remove();
+			}
+		},500)
 	}
 	document.addEventListener("DOMContentLoaded", function() {		
        //check ac button implementation 
