@@ -164,6 +164,10 @@
 	transform: rotate(45deg);
 	z-index:-1;
 }
+.mh-table.mouse-hover .tooltip, .mh-table.mouse-hover .tooltip * {
+    transition: none;
+}
+
 
 /* Headings */
 #page #primary #content .entry-content .h2 {
