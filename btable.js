@@ -14,18 +14,16 @@ if (window.isInited !== true) {
 	window.attachEvent("onload", downloadJSAtOnload);
 	else window.onload = downloadJSAtOnload;
 	
-	document.addEventListener("load", function() {
-		setTimeout(function(){
-			//remove blog tags after the 4th tags
-			var tagscounter;
-			var afterthattags = $('a[rel="tag"]').length * 2 -8;
-			$('a[rel="tag"]').eq(3).nextAll().css('display','none');
-			for (tagscounter = 0; tagscounter < afterthattags; tagscounter++) {
-				$('a[rel="tag"]').eq(3).get(0).nextSibling.remove();
-			}
-		},500)
-	}
-	document.addEventListener("DOMContentLoaded", function() {		
+	document.addEventListener("DOMContentLoaded", function() {
+		//display none blog tags after the 4th tags
+		var tagscounter;
+		var afterthattags = $('a[rel="tag"]').length;
+		for (tagscounter = 3; tagscounter < afterthattags; tagscounter++) {
+			$('a[rel="tag"]').eq(tagscounter).get(0).nextSibling.remove();
+		}
+		$('a[rel="tag"]').eq(3).nextAll().css('display','none');
+		
+		
        //check ac button implementation 
 	   $('.blog-trackable').each(function(){
 			var gacategory = $(this)[0].hasAttribute('ga-category');
