@@ -8,7 +8,18 @@
 #primary.site-content {
     padding: 0;
 }
-
+@media (max-width: 768px){
+main #blog-title{
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    background-size: contain !important;
+    z-index: 999;
+    left: 40px;
+    width: 200px;
+    height: 49px;
+}
+}
 
 /* Button */
 .btn {
