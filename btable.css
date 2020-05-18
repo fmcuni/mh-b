@@ -164,7 +164,7 @@
 	transform: rotate(45deg);
 	z-index:-1;
 }
-.mh-table.mouse-hover .link-on-tip, .mh-table.mouse-hover .tooltip * {
+.entry-content .mh-table.mouse-hover .tooltip.fade.top.in {
     transition: none;
 }
 .entry-content .link-on-tip{
