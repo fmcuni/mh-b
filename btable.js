@@ -14,17 +14,16 @@ if (window.isInited !== true) {
 	window.attachEvent("onload", downloadJSAtOnload);
 	else window.onload = downloadJSAtOnload;
 	
-	
-	document.addEventListener("DOMContentLoaded", function() {
-		//remove blog tags after the 4th tags
+	document.addEventListener("load", function() {
+	//remove blog tags after the 4th tags
 		var tagscounter;
 		var afterthattags = $('a[rel="tag"]').length * 2 -8;
 		$('a[rel="tag"]').eq(3).nextAll().css('display','none');
 		for (tagscounter = 0; tagscounter < afterthattags; tagscounter++) {
 			$('a[rel="tag"]').eq(3).get(0).nextSibling.remove();
 		}
-		
-		
+	}
+	document.addEventListener("DOMContentLoaded", function() {		
        //check ac button implementation 
 	   $('.blog-trackable').each(function(){
 			var gacategory = $(this)[0].hasAttribute('ga-category');
